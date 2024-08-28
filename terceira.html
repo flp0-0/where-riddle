@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHERE?</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WHERE?</h1>
+        <img src="hand-punching-man-in-face-png.webp" class="imagem-centralizada">
+        <h3>52°28'51.2"N 1°54'05.4"W</h3>
+        <h3>fundador?</h3>
+        <input type="text" placeholder="Insira o texto aqui..." class="input-text" id="input-text">
+        <button class="submit-btn" onclick="checkInput()">Enviar</button>
+        <div id="output"></div>
+    </div>
+</body>
+    <script>
+        function checkInput() {
+            const inputText = document.getElementById('input-text').value;
+            const output = document.getElementById('output');
+
+            if (inputText === "garrynewman") {
+                window.location.href = "quarta.html";
+            } else {
+                output.textContent = "ERRADO";
+            }
+        }
+    </script>
+</html>

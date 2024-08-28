@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHERE?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WHERE?</h1>
+       
+        <button class="start-btn" onclick="window.location.href='inicio.html'">Começar</button>
+    </div>
+    
+    <!--
+     <div class="container">
+        <h1>WHERE?</h1>
+        <input type="text" placeholder="Insira o texto aqui..." class="input-text">
+        <button class="submit-btn">Enviar</button>
+    </div>
+    -->
+
+    
+</body>
+
+<script>
+    function checkInput() {
+        const inputText = document.getElementById('input-text').value;
+        const output = document.getElementById('output');
+
+        // Condição if-else para verificar o que foi digitado
+        if (inputText === "OpenAI") {
+            window.location.href = "https://www.openai.com";
+        } else {
+            output.textContent = "Texto não reconhecido.";
+        }
+    }
+</script>
+
+</html>
